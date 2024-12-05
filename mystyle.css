@@ -1,0 +1,796 @@
+* {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #072996;
+    --text-color: #000;
+    --text-white: #fff;
+    --navy: #3161FF;
+    --redd: #FF2525;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden ;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+section {
+    height: 100vh;
+    max-height: max-content;
+}
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    margin: 0;
+    padding: 20px 20px 20px 75rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .5s all;
+}
+
+nav a:hover {
+    color: var(--navy);
+}
+
+/* Hero Section */
+.imgIDN {
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    height: 100vh;
+    margin-bottom: 100px;
+    z-index: 0;
+    position: relative;
+}
+
+.btn-info {
+    position: relative;
+    z-index: 1;
+    padding: 12px 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #3161FF;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border: #3161FF 2px solid;
+    border-radius: 20px;
+    margin-top: -170px;
+    margin-left: 70%;
+    transform:rotate(-2deg);
+    transition: .5s all;
+}
+
+.btn-info:hover {
+    background-color: white;
+    border: #3161FF 2px solid;
+    color: #3161FF;
+    transform: scale(1);
+}
+/* End Hero */
+
+/* Major Section */
+.button-container-major {
+    margin-top: 10%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.custom-button {
+    position: relative; 
+    background-color: #2d46cc;
+    color: #fff;
+    font-size: 40px; 
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    padding: 50px 50rem; 
+    margin-left: 13rem;
+    border: none;
+    border-radius: 25px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 50px; 
+    margin-bottom: 10%;
+}
+
+.custom-button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    background-color: white;
+    border: 2px solid #3161FF;
+    color: #3161FF;
+}
+
+.custom-button .text-1,
+.custom-button .text-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; 
+    transition: opacity 0.3s ease;
+}
+
+.custom-button .text-2 {
+    opacity: 0; 
+}
+
+.custom-button:hover .text-1 {
+    opacity: 0; 
+}
+
+.custom-button:hover .text-2 {
+    opacity: 1; 
+}
+/* End Major */
+
+/* About Section */
+.about-us {
+    margin-top: 20%;
+}
+.about-section {
+    margin-top: 20%;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2%;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+    flex: 2;
+    padding: 20px;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    color: #2d46cc;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.btn-about {
+    background-color: #2d46cc;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-about:hover {
+    background-color: white;
+    color: #2d46cc;
+    border: 2px solid #2d46cc;
+    transform: scale(1.05);
+}
+
+.visi-misi-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.visi-misi-box {
+    flex: 1 1 calc(50% - 20px); 
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.visi-misi-box:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.visi-misi-icon {
+    font-size: 40px;
+    color: #2d46cc;
+    margin-bottom: 15px;
+}
+
+.visi-misi-title {
+    font-size: 24px;
+    color: #2d46cc;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.visi-misi-description {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+
+/* Why Choose Us? */
+.why-choose-us {
+    margin-top: 30%;
+}
+
+h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.keunggulan-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.keunggulan-box {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    text-align: center;
+    color: #555;
+    margin-bottom: 10%;
+}
+
+.keunggulan-box:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    background-color: #2d46cc;
+    color: white;
+}
+
+.icon {
+    font-size: 50px;
+    color: #2d46cc;
+    margin-bottom: 15px;
+}
+
+.keunggulan-box:hover .icon {
+    color: #ffffff; 
+}
+
+.keunggulan-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.keunggulan-box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* End Why Choose Us */
+
+/* Galeri Kegiatan Asrama */
+.gallery-container {
+    margin-top: 10%;
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.prev-btn, .next-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.gallery {
+    display: flex;
+    transition: transform 0.5s ease; 
+    gap: 20px; 
+}
+
+.gallery-item {
+    width: 33.33%; 
+    height: 300px;
+    position: relative;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px; 
+}
+
+.gallery-item h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Carousel Outdoor */
+.outdoor_section {
+    margin-top: 10%;
+}
+.carousel-container {
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; 
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 400px;
+    position: relative;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px; 
+}
+
+.carousel-item h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.prev-btn, .next-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* End Carousel Outdoor */
+
+/* Testimoni */
+.testimoni {
+    margin-left: 18%;
+    margin-top: 10%;
+}
+.testimonial-slider-container {
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  /* Judul */
+  .testimonial-title {
+    font-size: 2rem;
+    color: #072996;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Slider */
+  .testimonial-slider {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .testimonial-slide {
+    display: none;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .testimonial-slide.active {
+    display: block;
+  }
+  
+  .photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #072996;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .testimonial-role {
+    font-size: 0.9rem;
+    color: #072996;
+  }
+  
+  /* Tombol navigasi */
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #2d46cc;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-button.left {
+    left: 10px;
+  }
+  
+  .nav-button.right {
+    right: 10px;
+  }
+  
+  .nav-button:hover {
+    background: #2d46cc;
+  }
+  
+  /* Dots */
+  .dots {
+    margin-top: 20px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background: #2d46cc;
+  }
+
+/* Footer Section */
+/* Footer styles */
+.footer-area {
+    color: --navy-color;
+    padding: 10px 0;
+    background-color: var(--primary-color);
+    filter: drop-shadow(0px 1px 38.9px rgba(70, 50, 103, 0.28));
+}
+.footer-section {
+    margin-left: 30px;
+}
+.subcription-form {
+    margin-right: -20%;
+    flex-direction: column;
+}
+
+.subcription-form img {
+    font-size: 18px;
+    color: var(--navy-color);
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.form-section {
+    display: flex;
+    margin-left: 10px;
+    padding-right: 20px;
+}
+
+.footer-column {
+    margin-right: 20px;
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+.input-data {
+    font-size: 12px;
+    margin-bottom: 50px;
+
+}
+.footer-area button {
+    width: 50px;
+    height: 47.7px;
+    border-radius: 10px;
+    border: none;
+}
+.footer-area h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-right: 20%;
+}
+
+.footer-area p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: navy;
+}
+
+.footer-area ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+    flex-direction: column;
+}
+
+.footer-area ul li {
+    margin-bottom: 10px;
+}
+
+.footer-area ul li a {
+    color: var(--navy-color);
+    text-decoration: none;
+    font-size: 14px;
+    transition: .5s all;
+    font-weight: 400;
+}
+
+.footer-area ul li a:hover {
+    color: var(--navy);
+}
+
+.footer-area .social-icons a {
+    font-size: 18px;
+    color: var(--navy-color);
+    margin-right: 15px;
+    text-decoration: none;
+    display: inline-block;
+    transition: .5s all;
+    font-weight: 400;
+}
+
+.footer-area .social-icons a:hover {
+    color: var(--navy);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.footer-column ul.contact-info li {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.footer-column ul.contact-info li i {
+    margin-right: 10px;
+    display: flex;
+
+}
+.social-media-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icon {
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--red-color); /* Warna merah bulat */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Membuat ikon bulat */
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animasi transisi */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+.facebook {
+    background-color: #3b5998; /* Warna khusus Facebook */
+}
+
+.facebook:hover {
+    background-color: #2d4373; /* Warna saat hover Facebook */
+}
+
+.instagram {
+    background-color: #e4405f; /* Warna khusus Instagram */
+}
+
+.instagram:hover {
+    background-color: #d62448; /* Warna saat hover Instagram */
+}
+
+.twitter {
+    background-color: #1da1f2; /* Warna khusus Twitter */
+}
+
+.twitter:hover {
+    background-color: #1991db; /* Warna saat hover Twitter */
+}
+
+.linkedin {
+    background-color: #0077b5; /* Warna khusus LinkedIn */
+}
+
+.linkedin:hover {
+    background-color: #005582; /* Warna saat hover LinkedIn */
+}
+
+.question-section {
+    display: flex;
+    margin-bottom: 23px;
+}
+.subcription-form {
+    padding-right: 177px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+    margin-top: 100px;
+}
+.subcription-form h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--red-color);
+    color: var(--navy-color);
+}
+
+.form-control {
+    height: 40px;
+    width: 262px;
+    margin-right: 15px;
+    border-radius: 10px;
+    padding-left: 5px;
+    font-size: 14px;
+}
